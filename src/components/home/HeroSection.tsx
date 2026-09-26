@@ -18,7 +18,7 @@ export function HeroSection() {
             Authorised distributors &amp; dealers · Chennai · Since {company.establishedYear}
           </p>
           <h1 id="hero-heading" className="mt-3 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-[3.25rem]">
-            Reliable Electronic Components for Industrial Applications
+            Powering Your Next Build
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
             Capacitors, resistors, connectors, pin headers, terminal blocks, relays, cables and tools — supplied from

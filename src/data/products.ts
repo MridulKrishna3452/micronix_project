@@ -238,12 +238,12 @@ export const products: Product[] = [
     verified: true,
   },
 
-  // ---------------------------------------------------------------- Pin headers & sockets
+  // ---------------------------------------------------------------- Pin headers & sockets (merged into Connectors)
   {
     id: 'pin-header',
     slug: 'pin-header',
     name: 'Pin Header',
-    category: 'pin-headers',
+    category: 'connectors',
     brands: [],
     shortDescription: 'Single and double row pin headers, straight and right angle.',
     description: 'Pin headers in single row and double row, straight and right-angle versions.',
@@ -257,7 +257,7 @@ export const products: Product[] = [
     id: 'female-headers',
     slug: 'flowsolder-female-headers',
     name: 'Flowsolder Female Headers',
-    category: 'pin-headers',
+    category: 'connectors',
     brands: [],
     shortDescription: 'Female header sockets suitable for flow soldering.',
     description: 'Flowsolder female headers (socket strips).',
@@ -269,7 +269,7 @@ export const products: Product[] = [
     id: 'jumpers',
     slug: 'jumpers',
     name: 'Jumpers',
-    category: 'pin-headers',
+    category: 'connectors',
     brands: [],
     shortDescription: 'Shunt jumpers for pin headers.',
     description: 'Jumpers (shunts) for pin headers.',
@@ -278,12 +278,12 @@ export const products: Product[] = [
     verified: true,
   },
 
-  // ---------------------------------------------------------------- Terminal blocks
+  // ---------------------------------------------------------------- Terminal blocks (merged into Connectors)
   {
     id: 'screw-terminal-blocks',
     slug: 'screw-type-terminal-blocks',
     name: 'Screw Type Terminal Blocks',
-    category: 'terminal-blocks',
+    category: 'connectors',
     brands: [],
     shortDescription: 'PCB screw terminal blocks.',
     description: 'Screw type terminal blocks for PCB mounting.',
@@ -296,7 +296,7 @@ export const products: Product[] = [
     id: 'xinya-combicon',
     slug: 'xinya-combicon-connector',
     name: 'Xinya Combicon Connector',
-    category: 'terminal-blocks',
+    category: 'connectors',
     brands: ['xinya'],
     shortDescription: 'Pluggable terminal block connectors from Xinya.',
     description: 'We are dealers of Xinya Combicon connectors (pluggable terminal block connectors).',
@@ -305,12 +305,12 @@ export const products: Product[] = [
     verified: true,
   },
 
-  // ---------------------------------------------------------------- D-sub
+  // ---------------------------------------------------------------- D-sub (merged into Connectors)
   {
     id: 'd-sub-connector',
     slug: 'd-sub-connector',
     name: 'D-sub Connector',
-    category: 'd-sub-connectors',
+    category: 'connectors',
     brands: [],
     shortDescription: 'D-subminiature connectors.',
     description: 'We are dealers of D-sub connectors.',
@@ -323,7 +323,7 @@ export const products: Product[] = [
     id: 'd-sub-dust-cover',
     slug: 'd-sub-dust-covers',
     name: 'D-sub Dust Covers',
-    category: 'd-sub-connectors',
+    category: 'connectors',
     brands: [],
     shortDescription: 'Plastic grey dust covers for D-sub connectors.',
     description: 'D-sub dust covers in plastic grey.',
@@ -333,12 +333,12 @@ export const products: Product[] = [
     verified: true,
   },
 
-  // ---------------------------------------------------------------- Relays & heat sinks
+  // ---------------------------------------------------------------- Relays
   {
     id: 'oen-relays',
     slug: 'oen-relays',
     name: 'OEN Relays',
-    category: 'relays-heat-sinks',
+    category: 'relays',
     brands: ['oen'],
     shortDescription: 'All types of OEN relays.',
     description: 'We deal in all types of OEN relays.',
@@ -346,11 +346,12 @@ export const products: Product[] = [
     imageAlt: 'OEN relay',
     verified: true,
   },
+  // ---------------------------------------------------------------- Heat sinks
   {
     id: 'success-heat-sink',
     slug: 'success-heat-sinks',
     name: 'SUCCESS Heat Sinks',
-    category: 'relays-heat-sinks',
+    category: 'heat-sinks',
     brands: ['success'],
     shortDescription: 'All types of heat sinks.',
     description: 'SUCCESS heat sinks — all types available.',
@@ -359,12 +360,12 @@ export const products: Product[] = [
     verified: true,
   },
 
-  // ---------------------------------------------------------------- Cables & accessories
+  // ---------------------------------------------------------------- Flat cables (merged into Connectors)
   {
     id: 'flat-cables',
     slug: 'flat-cables',
     name: 'Flat Cables',
-    category: 'cables-accessories',
+    category: 'connectors',
     brands: [],
     shortDescription: 'Flat ribbon cable.',
     description: 'Flat (ribbon) cables.',
@@ -372,11 +373,12 @@ export const products: Product[] = [
     imageAlt: 'Grey flat ribbon cable',
     verified: true,
   },
+  // ---------------------------------------------------------------- Tools & accessories
   {
     id: 'cable-ties',
     slug: 'cable-ties',
     name: 'Cable Ties',
-    category: 'cables-accessories',
+    category: 'tools-accessories',
     brands: [],
     shortDescription: 'Cable ties.',
     description: 'Cable ties.',
@@ -384,11 +386,12 @@ export const products: Product[] = [
     imageAlt: 'Bundle of cable ties',
     verified: true,
   },
+  // ---------------------------------------------------------------- Heat shrink sleeves
   {
     id: 'heat-shrink-sleeves',
     slug: 'heat-shrink-sleeves',
     name: 'Heat Shrink Sleeves',
-    category: 'cables-accessories',
+    category: 'heat-shrink-sleeves',
     brands: [],
     shortDescription: 'Heat shrink sleeves.',
     description: 'Heat shrink sleeves.',
@@ -400,7 +403,7 @@ export const products: Product[] = [
     id: 'crown-glue-stick',
     slug: 'crown-glue-stick',
     name: 'CROWN Glue Sticks',
-    category: 'cables-accessories',
+    category: 'tools-accessories',
     brands: ['crown'],
     shortDescription: 'CROWN make glue sticks.',
     description: 'CROWN make glue sticks.',
@@ -412,7 +415,7 @@ export const products: Product[] = [
     id: 'batteries',
     slug: 'batteries',
     name: 'Batteries',
-    category: 'cables-accessories',
+    category: 'tools-accessories',
     brands: [],
     shortDescription: 'All varieties of batteries.',
     description: 'All varieties of batteries available.',
@@ -421,12 +424,12 @@ export const products: Product[] = [
     verified: true,
   },
 
-  // ---------------------------------------------------------------- Tools & soldering
+  // ---------------------------------------------------------------- Tools & soldering (merged into Tools & Accessories)
   {
     id: 'soldron-soldering-iron',
     slug: 'soldron-soldering-iron',
     name: 'SOLDRON Soldering Iron',
-    category: 'tools-soldering',
+    category: 'tools-accessories',
     brands: ['soldron'],
     shortDescription: 'SOLDRON soldering irons.',
     description: 'SOLDRON soldering irons.',
@@ -438,7 +441,7 @@ export const products: Product[] = [
     id: 'soldron-soldering-bits',
     slug: 'soldron-soldering-bits',
     name: 'SOLDRON Soldering Bits',
-    category: 'tools-soldering',
+    category: 'tools-accessories',
     brands: ['soldron'],
     shortDescription: 'Replacement soldering bits.',
     description: 'SOLDRON soldering bits.',
@@ -450,7 +453,7 @@ export const products: Product[] = [
     id: 'multitec-wire-stripper-cutters',
     slug: 'multitec-wire-strippers-cutters',
     name: 'MULTITEC Wire Strippers & Cutters',
-    category: 'tools-soldering',
+    category: 'tools-accessories',
     brands: ['multitec'],
     shortDescription: 'MULTITEC wire strippers and cutters.',
     description: 'MULTITEC wire strippers and cutters. Micronix is a dealer of MULTITEC products.',
@@ -462,7 +465,7 @@ export const products: Product[] = [
     id: 'multitec-pliers',
     slug: 'multitec-pliers-nose-pliers',
     name: 'MULTITEC Pliers & Nose Pliers',
-    category: 'tools-soldering',
+    category: 'tools-accessories',
     brands: ['multitec'],
     shortDescription: 'MULTITEC pliers and nose pliers.',
     description: 'MULTITEC pliers and nose pliers. Micronix is a dealer of MULTITEC products.',
@@ -474,7 +477,7 @@ export const products: Product[] = [
     id: 'multitec-tool-kit',
     slug: 'multitec-tool-kit',
     name: 'MULTITEC Tool Kit',
-    category: 'tools-soldering',
+    category: 'tools-accessories',
     brands: ['multitec'],
     shortDescription: 'MULTITEC tool kits.',
     description: 'MULTITEC tool kits. Micronix is a dealer of MULTITEC products.',
@@ -486,7 +489,7 @@ export const products: Product[] = [
     id: 'multitec-nippers',
     slug: 'multitec-nippers',
     name: 'MULTITEC Nippers',
-    category: 'tools-soldering',
+    category: 'tools-accessories',
     brands: ['multitec'],
     shortDescription: 'MULTITEC nippers.',
     description: 'MULTITEC nippers. Micronix is a dealer of MULTITEC products.',
@@ -524,7 +527,7 @@ export const products: Product[] = [
     id: 'ic-regulators',
     slug: 'ic-and-regulators',
     name: 'ICs and Regulators',
-    category: 'other-components',
+    category: 'ics-regulators',
     brands: [],
     shortDescription: 'Integrated circuits and voltage regulators.',
     description: 'ICs and voltage regulators. Send us the part number for availability.',
@@ -548,7 +551,7 @@ export const products: Product[] = [
     id: 'soynia-products',
     slug: 'soynia-products',
     name: 'SOYNIA Products',
-    category: 'other-components',
+    category: 'soynia',
     brands: ['soynia'],
     shortDescription: 'Distributors of SOYNIA products.',
     description: 'Micronix is a distributor of SOYNIA products. Contact us for the current SOYNIA product range.',

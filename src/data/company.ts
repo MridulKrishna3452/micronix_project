@@ -32,7 +32,7 @@ export const company = {
     { label: 'Landline', display: '044 4214 4258', tel: '+914442144258' }, // VERIFIED
     { label: 'Landline', display: '044 2851 4418', tel: '+914428514418' }, // VERIFIED
   ],
-  whatsapp: { display: '+91 93810 11348', number: '919381011348' }, // VERIFIED — wa.me/919381011348
+  whatsapp: { display: '+91 99406 11348', number: '919940611348' }, // VERIFIED — wa.me/919940611348
   email: 'micronixcorp@gmail.com', // VERIFIED
 
   hours: [

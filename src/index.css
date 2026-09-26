@@ -62,8 +62,14 @@
 }
 
 @layer components {
+  /*
+   * Left padding is larger than the right: the fixed FloatingContactBar
+   * (Email/WhatsApp tab, see components/layout/FloatingContactBar.tsx) is
+   * 48px wide (56px from sm:) and docked to the viewport's left edge, so
+   * every section needs at least that much inset to stay clear of it.
+   */
   .container-x {
-    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+    @apply mx-auto w-full max-w-7xl pr-4 pl-14 sm:pr-6 sm:pl-16 lg:pr-8 lg:pl-16;
   }
   .section {
     @apply py-12 md:py-16;

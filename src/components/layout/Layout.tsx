@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
 import { CookieNotice } from './CookieNotice'
+import { FloatingContactBar } from './FloatingContactBar'
 
 /** Scrolls to top on navigation (SPA routers do not do this by default). */
 function ScrollToTop() {
@@ -29,6 +30,7 @@ export function Layout() {
       </main>
       <Footer />
       <CookieNotice />
+      <FloatingContactBar />
     </div>
   )
 }

@@ -7,7 +7,6 @@ import { countByCategory } from '../lib/search'
 import { HeroSection } from '../components/home/HeroSection'
 import { CategoryGrid } from '../components/home/CategoryGrid'
 import { BrandsStrip, ContactPreview, EnquiryCta, WhyChoose } from '../components/home/HomeSections'
-import { ProductGrid } from '../components/products/ProductGrid'
 import { SectionHeading } from '../components/ui/SectionHeading'
 import { Button } from '../components/ui/Button'
 import { PlaceholderNote } from '../components/ui/Badge'
@@ -16,8 +15,6 @@ import { ArrowRightIcon } from '../components/ui/Icons'
 export function HomePage() {
   usePageMeta('', `${company.positioning} Capacitors, resistors, connectors, terminal blocks, relays and tools.`)
   const counts = countByCategory(products)
-  const featuredCategories = categories.filter((c) => c.featured)
-  const featuredProducts = products.filter((p) => p.featured).slice(0, 8)
 
   return (
     <>
@@ -54,19 +51,6 @@ export function HomePage() {
             }
           />
           <CategoryGrid categories={categories} counts={counts} />
-        </div>
-      </section>
-
-      {/* Featured products */}
-      <section className="section border-t border-line bg-surface-alt" aria-labelledby="featured-heading">
-        <div className="container-x">
-          <SectionHeading
-            id="featured-heading"
-            eyebrow="Popular lines"
-            title="Featured products"
-            description={`One product from each of our ${featuredCategories.length} main categories.`}
-          />
-          <ProductGrid products={featuredProducts} />
         </div>
       </section>
 

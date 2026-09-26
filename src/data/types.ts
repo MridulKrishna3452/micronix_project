@@ -10,12 +10,12 @@ export type CategoryId =
   | 'capacitors'
   | 'resistors'
   | 'connectors'
-  | 'pin-headers'
-  | 'terminal-blocks'
-  | 'd-sub-connectors'
-  | 'relays-heat-sinks'
-  | 'cables-accessories'
-  | 'tools-soldering'
+  | 'relays'
+  | 'heat-sinks'
+  | 'tools-accessories'
+  | 'heat-shrink-sleeves'
+  | 'ics-regulators'
+  | 'soynia'
   | 'other-components'
 
 export interface Category {
