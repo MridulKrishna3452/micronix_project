@@ -17,6 +17,7 @@ export type CategoryId =
   | 'ics-regulators'
   | 'soynia'
   | 'other-components'
+  | 'smd-passive-components'
 
 export interface Category {
   id: CategoryId

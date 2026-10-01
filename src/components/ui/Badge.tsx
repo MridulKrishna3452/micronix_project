@@ -10,13 +10,3 @@ export function Badge({ children, tone = 'neutral' }: { children: ReactNode; ton
     <span className={`inline-flex items-center rounded-sm border px-2 py-0.5 text-xs font-medium ${tones[tone]}`}>{children}</span>
   )
 }
-
-/** Visible marker for content that must be verified/replaced before launch. */
-export function PlaceholderNote({ children }: { children: ReactNode }) {
-  if (import.meta.env.PROD) return null
-  return (
-    <p className="mt-2 rounded-sm border border-dashed border-accent-600 bg-accent/10 px-2 py-1 text-xs text-navy-900">
-      <strong>PLACEHOLDER (dev only):</strong> {children}
-    </p>
-  )
-}

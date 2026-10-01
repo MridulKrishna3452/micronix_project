@@ -3,7 +3,6 @@ import { brands } from '../data/brands'
 import { products } from '../data/products'
 import { BrandCard } from '../components/brands/BrandCard'
 import { SectionHeading } from '../components/ui/SectionHeading'
-import { PlaceholderNote } from '../components/ui/Badge'
 import { EnquiryCta } from '../components/home/HomeSections'
 
 export function BrandsPage() {
@@ -18,10 +17,9 @@ export function BrandsPage() {
             as="h1"
             eyebrow="Authorised distributors & dealers"
             title="Brands & manufacturers"
-            description={`Micronix represents ${brands.length} manufacturers. Every listing below is taken from our current dealership line-up; logos will be added as manufacturers supply approved artwork.`}
+            description={`Micronix represents ${brands.length} manufacturers. Every listing below is taken from our current dealership line-up.`}
             className="mb-0"
           />
-          <PlaceholderNote>Brand logos are not included. Add a `logo` path per brand in src/data/brands.ts once approved files are received.</PlaceholderNote>
         </div>
       </section>
 

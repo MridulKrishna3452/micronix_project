@@ -45,17 +45,17 @@ const REASONS = [
   {
     icon: StoreIcon,
     title: `Established ${company.establishedYear}`,
-    text: 'Serving industrial and electronics customers from Chintadripet, Chennai for over three decades.',
+    text: 'Serving industries and dealers from Mount Road, Chennai, for over three decades.',
   },
   {
     icon: ShieldIcon,
     title: 'Authorised dealers & distributors',
-    text: `Genuine parts from ${brands.length} manufacturers including MEGA, SAMWHA, KELTRON, OEN and SOLDRON.`,
+    text: 'Genuine components from reputed manufacturers and authorized distributors, including SAMWHA, Mega Resistors, Success Heat Sinks, Soinia, and more.',
   },
   {
     icon: BoxIcon,
     title: 'Wide component range',
-    text: 'Passives, connectors, terminal blocks, relays, heat sinks, cables, soldering equipment and tools under one roof.',
+    text: 'Passives, actives, optics and IoT, electrical under one roof.',
   },
   {
     icon: ChatIcon,
@@ -68,7 +68,7 @@ export function WhyChoose() {
   return (
     <section className="section" aria-labelledby="why-heading">
       <div className="container-x">
-        <SectionHeading id="why-heading" eyebrow="Why Micronix" title="Why customers choose Micronix" />
+        <SectionHeading id="why-heading" eyebrow="Why Micronix" title="Why Customers Choose Micronix Corporation" />
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="list">
           {REASONS.map((r) => (
             <li key={r.title} className="rounded-lg border border-line p-5">

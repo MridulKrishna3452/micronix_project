@@ -4,7 +4,7 @@ import { categoryById } from '../../data/categories'
 import { brandById } from '../../data/brands'
 import { company, whatsappUrl } from '../../data/company'
 import { Button } from '../ui/Button'
-import { Badge, PlaceholderNote } from '../ui/Badge'
+import { Badge } from '../ui/Badge'
 import { ChevronRightIcon, ExternalIcon, MailIcon, PhoneIcon, WhatsAppIcon } from '../ui/Icons'
 
 /** Reusable product detail layout: image | info + CTAs, then variants / specs. */
@@ -148,14 +148,11 @@ export function ProductDetail({ product }: { product: Product }) {
               ))}
             </dl>
           ) : (
-            <>
-              <p className="prose-muted mt-3 text-sm">
-                Detailed specifications are provided on request
-                {product.externalLink ? ' or on the manufacturer page linked above' : ''}. Share your part number or
-                electrical requirement and we will send the datasheet.
-              </p>
-              <PlaceholderNote>Add verified specs to `specs` in src/data/products.ts to show a spec table here.</PlaceholderNote>
-            </>
+            <p className="prose-muted mt-3 text-sm">
+              Detailed specifications are provided on request
+              {product.externalLink ? ' or on the manufacturer page linked above' : ''}. Share your part number or
+              electrical requirement and we will send the datasheet.
+            </p>
           )}
         </section>
       </div>

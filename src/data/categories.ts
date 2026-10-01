@@ -64,8 +64,14 @@ export const categories: Category[] = [
   {
     id: 'other-components',
     name: 'Other Components',
-    description: 'Potentiometers, fuses and LCD displays.',
+    description: 'Potentiometers, fuses, LCD displays, SMPS, trimpots and crystals from MEAN WELL, EPCOS, CDIL, BOURNS, PROTECTRON, EVERLIGHT, TE Connectivity and YXC.',
     image: '/images/products/pankaj-potentiometer.webp',
+  },
+  {
+    id: 'smd-passive-components',
+    name: 'SMD Passive Components',
+    description: 'SMD chip resistors and capacitors from WALSIN, ROYALOHM and YAGEO.',
+    image: '/images/brand/logos/walsin.webp',
   },
 ]
 

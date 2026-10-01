@@ -21,8 +21,8 @@ export function HeroSection() {
             Powering Your Next Build
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg">
-            Capacitors, resistors, connectors, pin headers, terminal blocks, relays, cables and tools — supplied from
-            stock or on order, with quotes over email or WhatsApp.
+            Reliable sourcing of Industrial Electronic Components — from trusted brands, with competitive pricing,
+            prompt service, and supply from stock or on order.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

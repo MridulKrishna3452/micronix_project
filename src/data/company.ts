@@ -11,11 +11,19 @@ export const company = {
   tagline: 'Industrial Electronic Components', // VERIFIED — hero image alt text on the current site
   positioning: 'Authorised distributors and dealers of industrial electronic components in Chennai.', // VERIFIED wording: "Authorised distributors and dealers for"
 
-  /** PLACEHOLDER — short company introduction. Replace with approved copy. */
+  /** PLACEHOLDER — short company introduction (homepage teaser). Replace with approved copy. */
   intro:
     'Micronix Corporation supplies electronic components to industrial customers from Chintadripet, Chennai. ' +
     'We stock capacitors, resistors, connectors, pin headers, terminal blocks, D-sub connectors, relays, ' +
     'heat sinks, cables, soldering equipment and tools from the manufacturers we represent.',
+
+  /** VERIFIED — full company overview, supplied by Micronix, shown on the About page. */
+  overview: [
+    'With over 30 years of experience, Micronix Corporation is a trusted Chennai-based dealer and distributor of Industrial electronic components. We cater to OEMs, manufacturers, dealers, and industrial customers with a wide range of products sourced from reputed manufacturers and established brands.',
+    'From Active, Passives, Optics & IOT, Electromechanical and other industrial components, we support both regular procurement and project-specific requirements.',
+    'Genuine products. Competitive pricing. Reliable sourcing. Prompt service.',
+    'Your Reliable Partner for Industrial Electronic Components.',
+  ],
 
   address: {
     line1: 'Seeal Amman Koil Street', // VERIFIED
@@ -33,7 +41,16 @@ export const company = {
     { label: 'Landline', display: '044 2851 4418', tel: '+914428514418' }, // VERIFIED
   ],
   whatsapp: { display: '+91 99406 11348', number: '919940611348' }, // VERIFIED — wa.me/919940611348
-  email: 'micronixcorp@gmail.com', // VERIFIED
+
+  /**
+   * All email addresses, for sections that list every way to reach the company
+   * (ContactInfo, Footer). Single-action CTAs (floating bar, per-product
+   * enquiry link, quote-form mailto) use `email` — the primary address — below.
+   */
+  emails: ['micronixcorp@gmail.com', 'micronixcorp1992@gmail.com'], // VERIFIED
+  get email() {
+    return this.emails[0]
+  },
 
   hours: [
     // VERIFIED from "Working Hours" on the current site

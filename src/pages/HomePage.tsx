@@ -9,7 +9,6 @@ import { CategoryGrid } from '../components/home/CategoryGrid'
 import { BrandsStrip, ContactPreview, EnquiryCta, WhyChoose } from '../components/home/HomeSections'
 import { SectionHeading } from '../components/ui/SectionHeading'
 import { Button } from '../components/ui/Button'
-import { PlaceholderNote } from '../components/ui/Badge'
 import { ArrowRightIcon } from '../components/ui/Icons'
 
 export function HomePage() {
@@ -28,7 +27,6 @@ export function HomePage() {
           </div>
           <div className="lg:col-span-7">
             <p className="prose-muted text-base md:text-lg">{company.intro}</p>
-            <PlaceholderNote>Company introduction is draft copy — confirm with Micronix (src/data/company.ts → intro).</PlaceholderNote>
             <Link to="/about" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-700 hover:underline">
               More about the company <ArrowRightIcon width={16} height={16} />
             </Link>

@@ -85,9 +85,13 @@ export function Footer() {
             </p>
             <p className="flex gap-2">
               <MailIcon className="mt-0.5 shrink-0" width={18} height={18} />
-              <a href={`mailto:${company.email}`} className="break-all hover:text-white">
-                {company.email}
-              </a>
+              <span className="flex flex-col">
+                {company.emails.map((e) => (
+                  <a key={e} href={`mailto:${e}`} className="break-all hover:text-white">
+                    {e}
+                  </a>
+                ))}
+              </span>
             </p>
           </address>
         </div>

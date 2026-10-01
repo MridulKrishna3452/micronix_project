@@ -3,7 +3,6 @@ import { company } from '../data/company'
 import { brands } from '../data/brands'
 import { categories } from '../data/categories'
 import { SectionHeading } from '../components/ui/SectionHeading'
-import { PlaceholderNote } from '../components/ui/Badge'
 import { Button } from '../components/ui/Button'
 import { CheckIcon } from '../components/ui/Icons'
 import { ContactInfo } from '../components/contact/ContactInfo'
@@ -36,11 +35,11 @@ export function AboutPage() {
             <h2 id="overview-heading" className="text-2xl font-bold tracking-tight">
               Company overview
             </h2>
-            <p className="prose-muted mt-4">{company.intro}</p>
-            <PlaceholderNote>
-              Overview, history, mission and values are not published on the current website. The paragraph above is draft
-              copy — replace it with approved text in src/data/company.ts and this page.
-            </PlaceholderNote>
+            <div className="prose-muted mt-4 grid gap-4">
+              {company.overview.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
 
             <h2 className="mt-10 text-2xl font-bold tracking-tight">Areas of expertise</h2>
             <ul className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -64,11 +63,9 @@ export function AboutPage() {
                 <Row k="Company" v={company.name} />
                 <Row k="Established" v={String(company.establishedYear)} />
                 <Row k="Business" v="Distribution and dealership of electronic components" />
-                <Row k="Location" v={`${company.address.line2}, ${company.address.city}`} />
+                <Row k="Location" v="Mount Road, Chennai" />
                 <Row k="Hours" v={`${company.hours[0].days}, ${company.hours[0].time}`} />
-                <Row k="GSTIN" v={company.gstin || 'To be confirmed'} />
               </dl>
-              <PlaceholderNote>Add GSTIN, registration details and any certifications only once verified.</PlaceholderNote>
             </div>
           </aside>
         </div>
